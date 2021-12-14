@@ -8,7 +8,7 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 
 const OrderReview = () => {
     const [products] = useProducts([]);
-    const [cart , setCart] = useCart(products);
+    const [cart , setCart] = useCart();
     const handleRemove = key => {
         const newCart = cart.filter(pd => pd.key !== key);
         setCart(newCart);
